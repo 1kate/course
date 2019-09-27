@@ -1,0 +1,26 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.card-places {
+    max-width: 400px;
+}
+.places{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.places li {
+    list-style-type: none; 
+    padding: 10px;
+    display: inline;
+    cursor: pointer;
+}
+.mat-card {
+    background: rgb(235, 235, 235);
+    margin: 10px 0;
+}
+.mat-card-image {
+    max-height: 230px;
+}

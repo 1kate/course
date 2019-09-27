@@ -1,0 +1,22 @@
+
+    <mat-card class="card-places">
+            <mat-card-header>
+                <mat-card-title>
+                  <ul class="places" >
+                    <li *ngFor="let place of places">
+                        <span (click)="type(place)">{{ place.type }}</span> 
+                    </li>
+                  </ul> 
+                </mat-card-title>
+              </mat-card-header>
+            <img mat-card-image [src]="place.img"/>
+            
+            <mat-card-content> 
+                
+                  <span>Address</span>
+                  <p>{{place.address}}</p>
+                  <p>{{place.phone}}</p>
+            </mat-card-content>
+          </mat-card>
+         
+<ng-container #container></ng-container>
