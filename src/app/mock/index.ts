@@ -56,7 +56,7 @@ export const places: IPlace[] = [
       },
       {
         img: 'assets/img/italy.jpg',
-        address: '125009, г.Москва, Тверская улица, дом 13.',
+        address: '942374, Consorzio Nazionale Imballaggi Via Pompeo Litta',
         phone: 88974238944,
         weather: {
           title: 'sun',
