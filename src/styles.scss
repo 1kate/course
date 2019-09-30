@@ -1,10 +1,14 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+@import "~bootstrap/scss/bootstrap.scss";
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    margin: 0;
+    background: #2a1946;
+}
 
-.card-places {
-    max-width: 400px;
+.card-right {
+    max-width: 250px;
+    text-align: center;
 }
 .places{
     display: inline;
@@ -18,9 +22,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     cursor: pointer;
 }
 .mat-card {
-    background: rgb(235, 235, 235);
-    margin: 10px 0;
+    background: #eff9ff;
 }
 .mat-card-image {
-    max-height: 230px;
+    max-height: 260px;
 }

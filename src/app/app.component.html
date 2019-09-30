@@ -1,14 +1,27 @@
-<app-places (outputPlaces)='output($event)'>
-  <ng-template #content>
-  </ng-template>
-</app-places>
- <app-weather [place]="place">
-    <ng-template #content>
-       
-      </ng-template>
-</app-weather>   
-<app-social [place]="place">
-    <ng-template #content> 
-      </ng-template>
-</app-social>   
-
+<div class="container mt-5">
+   <div class="row">
+     <div class="col-lg-6 offset-lg-2">
+      <app-places (outputPlaces)='output($event)'>
+        <ng-template #content>
+        </ng-template>
+      </app-places>
+     </div>
+     <div class="col-lg-4">
+       <div class="row h-100">
+         <div class="col-lg-12">
+            <app-weather [place]="place">
+                <ng-template #content>
+                   
+                  </ng-template>
+            </app-weather>    
+         </div>
+         <div class="col-lg-12 d-flex align-items-end">
+            <app-social [place]="place" class="w-100">
+                <ng-template #content> 
+                  </ng-template>
+              </app-social>  
+         </div>
+       </div> 
+    </div>  
+   </div>
+ </div>

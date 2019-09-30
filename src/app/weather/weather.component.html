@@ -1,19 +1,11 @@
-<mat-card class="card-places"> 
+<mat-card class="card-right"> 
         <mat-card-content>   
             <h2>{{place.weather.title}}</h2>
-            <mat-grid-list cols="4" rowHeight="100px">
-                    <mat-grid-tile
-                        [colspan]="2"
-                        [rowspan]="2">
-                        <img mat-card-image [src]="place.weather.icon" class="icon"/>
-                    </mat-grid-tile>
-                    <mat-grid-tile
-                    [colspan]="2"
-                    [rowspan]="2">
-                    <h1>{{place.weather.temperature}}</h1>
-                </mat-grid-tile>
-            </mat-grid-list>
-            <p>Water {{place.weather.water}}</p> 
+            <div class="row">
+                <div class="col"><img [src]="place.weather.icon" class="icon"/></div>
+                <div class="col d-flex align-items-center"><h1>{{place.weather.temperature}}&#176;</h1></div>
+            </div>
+            <p>Water {{place.weather.water}}&#176;</p> 
         </mat-card-content>
       </mat-card>
 <ng-container #container></ng-container>

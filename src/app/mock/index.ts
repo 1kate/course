@@ -65,7 +65,7 @@ export const places: IPlace[] = [
           temperature: +23
         },
         social_info: {
-          title: 'Assitia Assitia',
+          title: 'Assitia Itia',
           img: 'assets/img/enot.jpg',
           followers: 156,
           following: 874

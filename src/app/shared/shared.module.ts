@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { MatCardModule, MatGridListModule } from '@angular/material';
-
+ 
 @NgModule({
   exports: [
     MatCardModule,
-    MatGridListModule
+    MatGridListModule, 
   ] 
 })
 export class SharedModule { }

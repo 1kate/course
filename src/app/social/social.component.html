@@ -1,13 +1,11 @@
-<mat-card class="card-places" color="primary">
-        <mat-card-header style="text-align: center"> 
-            <mat-card-title >{{place.social_info.title}}</mat-card-title> 
-          </mat-card-header>
+<mat-card class="card-right">
+            <h4>{{place.social_info.title}}</h4> 
         <mat-card-content>   
          <div style="text-align: center">
              <img [src]="place.social_info.img" mat-card-avatar class="foto"/> 
          </div>
             <p>{{place.social_info.temperature}}</p>
-            <p>followers {{place.social_info.followers}} following {{place.social_info.following}}</p> 
+            <p>followers: {{place.social_info.followers}} | following: {{place.social_info.following}}</p> 
         </mat-card-content>
       </mat-card>
 <ng-container #container></ng-container>
